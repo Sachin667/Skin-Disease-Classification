@@ -19,8 +19,9 @@ the earliest.**
 
 Afterwards, skin samples were taken for the evaluation of 22
 histopathological features.
+
 * **CLINICAL FEATURES**
-*
+ 
 * **Erythema** - Erythema is redness of the skin or mucous membranes(magnitude scale between 0 and 3)
 * **Scaling** -Scales occur when the outermost layer of the epidermis becomes dry and flaky and peels(magnitude scale between 0 and 3)
 * **Definite borders**-visible borders and appears are spread in the skin(magnitude scale between 0 and 3)
@@ -32,9 +33,9 @@ histopathological features.
 * **knee and elbowinvolvement**-The skin of the knees and elbows are frequent sites of trauma, including abrasions and contusions(magnitude scale between 0 and 3)
 * **scalp involvement**-scalp involvement related to skin disease and its magnitude (between 0 and 3)
 * **Family history**-Whether the patient's family members have the same diseases or not(0-NO,1-YES)
-* 
+ 
 * **HISTOPATHOLOGICAL ATTRIBUTES**
-*
+ 
 * **Melanin incontinence**-Melanin incontinence (pigmentary incontinence) is the presence of melanin in the superficial dermis, due to the loss of melanin from damaged cells of the basal layer(magnitude scale between 0 and 3)
 * **Eosinophils in the infiltrate**-Eosinophil infiltration is a common finding in a broad spectrum of skin diseases, despite the fact that the skin is devoid of eosinophils under physiologic conditions(magnitude scale between 0 and 3)
 * **PNL infiltrate**-A predominantly neutrophilic infiltrate of the dermis means a large number of neutrophils inferred to have migrated into the skin(magnitude scale between 0 and 3)
@@ -58,4 +59,15 @@ histopathological features.
 * **inflammatory monoluclear inflitrate**-Mononuclear cell infiltration is observed first in the affected skin,reaches a peak at 2 weeks of age and resolves later in the course of the disease.This common is all skin diseases(magnitude scale between 0 and 3)
 * **Band like infiltrate**-There is a band-like infiltrate of lymphocytes at the epidermal-dermal junction with damage to the basal cell layer and pigment incontinence,this feature is mainly associated with lichen planus disease(magnitude scale between 0 and 3)
 * **AGE**-Patients Age
-* 
+## Model Performance 
+* We tried with 8 ML algorithms and as we can see that most of the algorithms performing well with this data with an accuracy of more than 90%..
+* **Catboost** - From the above ML algorithms **Catboost gives good accuracy score(94%)** in classifying the disease.. Random Forest is basically a set of decision trees (DT) from a randomly selected subset of the training set and then It collects the votes from different decision trees to decide the final prediction..There was only two misclassifcation in class 2 and class 4 disease..However the model is performing well with this data for classifying the target classes correctly..
+
+### CHALLENGES FACED DURING THE PROJECT
+* The first and important challenge that we faced was lack of domain knowledge,Without domain knowledge we cannot address the relevent features correctly..For this we reffered plenty of websites about  erythemato squamous diseases to understand this diesase nature and behaviour..
+* Time and efforts taken for the deep understanding of data features,we analysed features  individually and sort out the relevent information and combined it
+* Out of 35 features,34 columns are categorical in nature and handling this much caegorical data was difficult..For this we applied chi square to sort out the non-importance features,but didnot get a desired result from this..
+* Lot of time taken for Data Analysis because there are many categorical features, understanding and interpreting the right meaning of the data was somehow dificult(reffered wikipedia,dermentogy websites etc)
+* During  the data preprocessing we have confusions regarding the implementation of  chi square test.We got help from d_tribe and wednesday doubt clearing section
+* Syntax errors while visualisation using plotly,resolved by reffering stack overflow and geekforgeeks website
+* Doubts regarding performance metrices was cleared through doubt clearing section and also reffering towardsdatasceince website and medium website
